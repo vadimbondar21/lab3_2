@@ -2,14 +2,14 @@
 #include <stdlib.h>
 #include <math.h>
 #include <time.h>
-//Ïðîòîòèï
+//ÐŸÑ€Ð¾Ñ‚Ð¾Ñ‚Ð¸Ð¿
 
 double func (double x);
 unsigned int method_choose( void );
 double method_of_halving ( double x1, double x2, double epsilon, unsigned int iteration_variant, unsigned int iteration_step);
 double hord_method ( double x1, double x2, double epsilon, unsigned int iteration_variant, unsigned int iteration_step);
 //================================================================================================================
-//Âèêëèê
+//Ð’Ð¸ÐºÐ»Ð¸Ðº
 int main(){
 
 unsigned int method, iteration_variant;
@@ -66,14 +66,14 @@ return 0;
 }
 
 //================================================================================================================
-//Îïèñ ôóíêö³¿
+//ÐžÐ¿Ð¸Ñ Ñ„ÑƒÐ½ÐºÑ†Ñ–Ñ—
 double func (double x){
 
  return (pow(x,3)/30)-(4*pow(x,2))+50;
 }
 
 //===============================================================================================================
-//Îïèñ âèáîðó âàð³àíòó
+//ÐžÐ¿Ð¸Ñ Ð²Ð¸Ð±Ð¾Ñ€Ñƒ Ð²Ð°Ñ€Ñ–Ð°Ð½Ñ‚Ñƒ
 unsigned int method_choose( void ){
 
 unsigned int var;
@@ -94,7 +94,7 @@ return var;
 }
 
 //================================================================================================================
-//Îïèñ ìåòîäó ïîëîâèííîãî ä³ëåííÿ
+//ÐžÐ¿Ð¸Ñ Ð¼ÐµÑ‚Ð¾Ð´Ñƒ Ð¿Ð¾Ð»Ð¾Ð²Ð¸Ð½Ð½Ð¾Ð³Ð¾ Ð´Ñ–Ð»ÐµÐ½Ð½Ñ
 double method_of_halving ( double x1, double x2, double epsilon, unsigned int iteration_variant, unsigned int iteration_step){
 
 double Xi;
@@ -117,9 +117,9 @@ unsigned int iteration_count = 0;
     if (iteration_count = iteration_step ){
     printf("\n%d iterations done", iteration_count);
     printf("\n X=%lf\n F(x)=%lf", Xi, func(Xi));
-    printf("\n 1.Continue execution");//ïðîäîâæåííÿ âèêîíàííÿ ïðîãðàìè ç òàêîþ æå ê³ëüê³ñòþ ³òåðàö³é
-    printf("\n 2.Complete the program until the root is found");//Ïðîäîâæèòè âèêîíàííÿ ïîêè íå áóäå çíàéäåíî êîð³íü
-    printf("\n 3.Display the intermediate result and exit the program");//âèâåñòè ïîòî÷í³ çíà÷åííÿ òà âèéòè ç ïðîãðàìè
+    printf("\n 1.Continue execution");//Ð¿Ñ€Ð¾Ð´Ð¾Ð²Ð¶ÐµÐ½Ð½Ñ Ð²Ð¸ÐºÐ¾Ð½Ð°Ð½Ð½Ñ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¸ Ð· Ñ‚Ð°ÐºÐ¾ÑŽ Ð¶Ðµ ÐºÑ–Ð»ÑŒÐºÑ–ÑÑ‚ÑŽ Ñ–Ñ‚ÐµÑ€Ð°Ñ†Ñ–Ð¹
+    printf("\n 2.Complete the program until the root is found");//ÐŸÑ€Ð¾Ð´Ð¾Ð²Ð¶Ð¸Ñ‚Ð¸ Ð²Ð¸ÐºÐ¾Ð½Ð°Ð½Ð½Ñ Ð¿Ð¾ÐºÐ¸ Ð½Ðµ Ð±ÑƒÐ´Ðµ Ð·Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾ ÐºÐ¾Ñ€Ñ–Ð½ÑŒ
+    printf("\n 3.Display the intermediate result and exit the program");//Ð²Ð¸Ð²ÐµÑÑ‚Ð¸ Ð¿Ð¾Ñ‚Ð¾Ñ‡Ð½Ñ– Ð·Ð½Ð°Ñ‡ÐµÐ½Ð½Ñ Ñ‚Ð° Ð²Ð¸Ð¹Ñ‚Ð¸ Ð· Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¸
 
     while( continuation_option !=1 && continuation_option != 2 && continuation_option != 3 ){
     printf("\n>");
@@ -170,7 +170,7 @@ unsigned int iteration_count = 0;
 }
 
 //================================================================================================================
-//Îïèñ ìåòîäó õîðä
+//ÐžÐ¿Ð¸Ñ Ð¼ÐµÑ‚Ð¾Ð´Ñƒ Ñ…Ð¾Ñ€Ð´
 
 double hord_method ( double x1, double x2, double epsilon, unsigned int iteration_variant, unsigned int iteration_step){
 
@@ -190,9 +190,9 @@ double Xi = 0;
 
     printf("\n%d iterations done", iteration_count);
     printf("\n X=%lf\n F(x)=%lf", Xi, func(Xi));
-    printf("\n 1.Continue execution");//ïðîäîâæåííÿ âèêîíàííÿ ïðîãðàìè ç òàêîþ æå ê³ëüê³ñòþ ³òåðàö³é
-    printf("\n 2.Complete the program until the root is found");//Ïðîäîâæèòè âèêîíàííÿ ïîêè íå áóäå çíàéäåíî êîð³íü
-    printf("\n 3.Display the intermediate result and exit the program");//âèâåñòè ïîòî÷í³ çíà÷åííÿ òà âèéòè ç ïðîãðàìè
+    printf("\n 1.Continue execution");//Ð¿Ñ€Ð¾Ð´Ð¾Ð²Ð¶ÐµÐ½Ð½Ñ Ð²Ð¸ÐºÐ¾Ð½Ð°Ð½Ð½Ñ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¸ Ð· Ñ‚Ð°ÐºÐ¾ÑŽ Ð¶Ðµ ÐºÑ–Ð»ÑŒÐºÑ–ÑÑ‚ÑŽ Ñ–Ñ‚ÐµÑ€Ð°Ñ†Ñ–Ð¹
+    printf("\n 2.Complete the program until the root is found");//ÐŸÑ€Ð¾Ð´Ð¾Ð²Ð¶Ð¸Ñ‚Ð¸ Ð²Ð¸ÐºÐ¾Ð½Ð°Ð½Ð½Ñ Ð¿Ð¾ÐºÐ¸ Ð½Ðµ Ð±ÑƒÐ´Ðµ Ð·Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾ ÐºÐ¾Ñ€Ñ–Ð½ÑŒ
+    printf("\n 3.Display the intermediate result and exit the program");//Ð²Ð¸Ð²ÐµÑÑ‚Ð¸ Ð¿Ð¾Ñ‚Ð¾Ñ‡Ð½Ñ– Ð·Ð½Ð°Ñ‡ÐµÐ½Ð½Ñ Ñ‚Ð° Ð²Ð¸Ð¹Ñ‚Ð¸ Ð· Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¸
 
     while( continuation_option !=1 && continuation_option != 2 && continuation_option != 3 ){
     printf("\n>");
