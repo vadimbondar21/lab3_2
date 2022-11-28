@@ -14,7 +14,7 @@ int main(){
 
 unsigned int method, iteration_variant;
 double x1, x2, epsilon,  root, delta_time;
-int iteration_step = 5;
+int iteration_step = 1;
 time_t start, end;
 
 
@@ -129,7 +129,7 @@ unsigned int iteration_count = 0;
 
     if(continuation_option == 1){
 
-    iteration_step = iteration_count + 5;
+    iteration_step = iteration_count + 1;
                         }
 
     if(continuation_option == 2){
@@ -202,7 +202,7 @@ double Xi = 0;
 
     if(continuation_option == 1){
 
-    iteration_step = iteration_count + 5;
+    iteration_step = iteration_count + 1;
                         }
 
     if(continuation_option == 2){
